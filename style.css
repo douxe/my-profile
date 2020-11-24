@@ -1,0 +1,214 @@
+
+
+/*Comme vous l'avez dit en cours, vous ne notez pas l'esthétisme mais la complexité du code. Je me suis donc amusé à utiliser un fond, des couleurs et certaines commandes 
+(ex : les icones qui tournent) que je n'aurais, bien sûr, même pas imaginer mettre dans un vrai CV. 
+Certaines commandes n'étaient pas expliquées dans les vidéos, je me suis donc permis de faire quelques recherches complémentaires afin d'apprendre à maitriser d'autres 
+commandes et pouvoir ainsi complexifier mon code et rendre mon CV plus accueillant*/
+
+body{
+	background-color: #cffffe;
+	background-image:url(images/bonbons.png);
+	background-size: 500px}
+
+	h1{
+		padding-bottom: 20px;
+		padding-top: 20px;
+		text-transform : uppercase;
+		text-decoration: underline}
+
+	h2{
+		text-decoration: underline;
+		padding : 15px}
+
+	h3{
+		font-size: x-large;
+		font-family : Comic Sans MS;
+		box-shadow: 0px 2px 5px rgb(130,130,130);
+		border-radius: 25px;
+		padding : 20px;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		text-align : center}
+
+	h4{
+		font-size: x-small;
+		padding:10px}
+
+	p{
+		line-height: 1.5; 
+		font-weight: 250}
+
+	img{
+		width: 390px;
+		padding-bottom: 10px;
+		padding-left: 20px}
+
+	a{
+		text-decoration: none;
+		color: black}
+
+/*STRUCTURE :*/
+
+	#container{
+		width: 650px; 
+		margin: 0px auto}
+
+	.card{
+		box-shadow: 0px 2px 5px rgb(130,130,130);
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 7px;
+		margin-top: 25px;
+		margin-bottom: 25px}
+
+		.card-yellow{
+			background-color: #f9f7d9}
+
+		.card-orange{ 
+			background-color: #fce2ce}
+
+		.card-rose{
+			background-color: #ffc1f3}
+
+	.text-position{
+		padding-left: 35px;
+		padding-right: 35px;
+		padding-bottom: 20px;
+		padding-top: 5px;
+		line-height: 0px;
+		font-family: verdana, sérif;
+		text-align: center}
+
+	#img_position{
+		float: right;
+		padding-top: 20px;
+		height: 490px;
+		width : 370px;
+		position: relative}
+			
+	#icon_position{
+		width : 100px;
+		top:-10px;
+		left:10px;
+		position: relative;
+		padding-top: 5px;
+		list-style:none}
+
+	.RS-list{
+		list-style: none;
+		padding-left: 0px}
+
+	.RS-list li{
+		display: inline;
+		padding: 35px}
+
+	.RS-list li:hover{
+		opacity:0.5}
+
+	.btn-position{
+		width: 125px;
+		margin:5px;
+		padding-top: 12px;
+		margin-left: 15px}
+
+	.btn-estetic{
+		background-color: #cffffe;
+		box-shadow: 0px 2px 5px rgb(150,150,150);
+		font-size: 13px;
+		border: #cffffe;
+		border-radius: 35px;
+      	cursor: pointer}
+
+	.btn-estetic:hover{
+		opacity:0.5}
+
+/*LIEN :*/
+
+	.langues-backgrd{
+		background-image:url(images/bonbons.png);
+		background-color : #cffffe;
+		background-size : 500px}
+
+		#FR-backgrd{
+			Background-position : 50% 50%}
+
+		#ENG-backgrd{
+			Background-position : 50% 68%}
+
+		#ALL-backgrd{
+			Background-position : 50% 86%}
+
+		.langues-link:hover{
+			text-decoration: underline}
+
+	.RS-link{
+		color: black}
+
+	.word-link{
+		color: black;
+		text-decoration: underline}
+
+/*DESIGN REACTIF*/
+	
+	@media(max-width: 650px){
+		#all-width{
+			width: 600px}
+
+		#icon_position{
+			position: relative;
+			top: 0px;
+			left: -20px}
+		
+		#introduction{
+			background-size: 500px;
+			height: 640px}
+
+		#img_position{
+			height: 500px;
+			width : 380px}	
+
+
+@media(max-width: 600px){
+		#all-width{
+			width: 500px}
+
+		#icon_position{
+			visibility: collapse}
+		
+		#introduction{
+			background-size: 500px;
+			height: 600px}
+
+		#img_position{
+			float: none;
+			height: 500px;
+			width : 380px;
+			display: block;
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    	padding: 0}
+
+		img{
+			padding:0}
+
+@media(max-width: 550px){
+		#all-width{
+			width: 450px}
+
+		#icon_position{
+			visibility: collapse}
+		
+		#introduction{
+			background-size: 500px;
+			height: 600px}
+
+		#img_position{
+			float: none;
+			height: 500px;
+			width : 380px;
+			display: block;
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    	padding: 0}
+
+		img{
+			padding:0}
+
